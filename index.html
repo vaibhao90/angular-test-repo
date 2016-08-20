@@ -13,15 +13,15 @@
 <div>
    <p>Code is as follows: </p>
    <pre>
-    <xmp>
-     <table  class="responsive">
-        <tr ng-repeat="task_element in tasks">
-  		      <td> {{$index + 1}}</td>
-            <td>{{ task_element }}</td>
-            <td><button ng-click="removeTask($index)">Remove</button></td>
-         </tr>
-      </table>
-   </xmp>
+      <xmp>
+         <table  class="responsive">
+            <tr ng-repeat="task_element in tasks">
+  		         <td> {{$index + 1}}</td>
+               <td>{{ task_element }}</td>
+               <td><button ng-click="removeTask($index)">Remove</button></td>
+            </tr>
+         </table>
+      </xmp>
    </pre>
 </div>
 <div ng-app="" ng-controller="formController">
