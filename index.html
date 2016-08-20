@@ -13,7 +13,7 @@
 <div>
    <p>Code is as follows: </p>
    <pre>
-    <code>
+    <xmp>
      <table  class="responsive">
         <tr ng-repeat="task_element in tasks">
   		      <td> {{$index + 1}}</td>
@@ -21,7 +21,7 @@
             <td><button ng-click="removeTask($index)">Remove</button></td>
          </tr>
       </table>
-   </code>
+   </xmp>
    </pre>
 </div>
 <div ng-app="" ng-controller="formController">
