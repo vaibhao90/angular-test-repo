@@ -10,8 +10,17 @@
 </head>
 
 <body>
-
-<div ng-app="" ng-controller="formController" style="width = 40%; text-align: center;border-right: 2px solid #000;">
+<div>
+   <p>Code is as follows: </p>
+    ' <table  class="responsive">
+  <tr ng-repeat="task_element in tasks">
+  		<td> {{$index + 1}}</td>
+    <td>{{ task_element }}</td>
+     <td><button ng-click="removeTask($index)">Remove</button></td>
+   </tr>
+</table>'
+</div>
+<div ng-app="" ng-controller="formController">
   <form novalidate>
     Task  <input type="text" ng-model="task"><button ng-click="add(task)">ADD</button>
    <!--  <button ng-click="reset()">RESET</button> -->
@@ -29,15 +38,7 @@
 </table>
 </p>
 </div>
-<div style="width = 40%; text-align: center;border-left: 2px solid #000;">
-    ' <table  class="responsive">
-  <tr ng-repeat="task_element in tasks">
-  		<td> {{$index + 1}}</td>
-    <td>{{ task_element }}</td>
-     <td><button ng-click="removeTask($index)">Remove</button></td>
-   </tr>
-</table>'
-</div>
+
 
 
 </body>
