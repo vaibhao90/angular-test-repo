@@ -12,15 +12,20 @@
 <body>
 <div>
    <p>Code is as follows: </p>
-    ' <table  class="responsive">
-  <tr ng-repeat="task_element in tasks">
-  		<td> {{$index + 1}}</td>
-    <td>{{ task_element }}</td>
-     <td><button ng-click="removeTask($index)">Remove</button></td>
-   </tr>
-</table>'
+   <pre>
+    <code>
+     <table  class="responsive">
+        <tr ng-repeat="task_element in tasks">
+  		      <td> {{$index + 1}}</td>
+            <td>{{ task_element }}</td>
+            <td><button ng-click="removeTask($index)">Remove</button></td>
+         </tr>
+      </table>
+   </code>
+   </pre>
 </div>
 <div ng-app="" ng-controller="formController">
+   <p>Output is as follows: </p>
   <form novalidate>
     Task  <input type="text" ng-model="task"><button ng-click="add(task)">ADD</button>
    <!--  <button ng-click="reset()">RESET</button> -->
